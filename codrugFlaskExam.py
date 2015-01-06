@@ -14,12 +14,14 @@ def hello_world():
 
 #김재윤님이 참여하였습니다.
 
+@app.route('/hello2')
+def hello():
+    return "Hello Flask!"
 
 
+app.run()
 
-
-
-
-# 이 부분은 어플이 이 파일 안에서 실행될따면 어플을 실행한다는 부분인데, 다른곳에서 import codrugFlaskExam 이런식으로 불러다 썼을때는 실행이 안되게 함
-if __name__ == '__main__':
-    app.run()
+#
+# # 이 부분은 어플이 이 파일 안에서 실행될따면 어플을 실행한다는 부분인데, 다른곳에서 import codrugFlaskExam 이런식으로 불러다 썼을때는 실행이 안되게 함
+# if __name__ == '__main__':
+#     app.run()
